@@ -1,0 +1,2 @@
+module Inputprocess::ShareleaseHelper
+end

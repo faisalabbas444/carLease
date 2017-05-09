@@ -1,0 +1,13 @@
+<h2><% header 'Share Your Lease' %></h2>
+<%= form_for :sharelease, url: sharelease_index_path, method: :post do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :model %>
+      <%= f.text_field :model, class: 'form-control' %>
+    </div>
+
+    <%= f.submit 'Share your Lease', class: 'btn btn-primary' %>
+<% end %>
